@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 version: 0.0
 os: linux
 files:
@@ -16,22 +15,3 @@ hooks:
     - location: scripts/stop_nginx.sh
       timeout: 300
       runas: root
-=======
-version: 0.0
-os: linux
-files:
-  - source: /Dockerfile
-    destination: .
-hooks:
-  BeforeInstall:
-    - location: scripts/install-dependencies.sh
-      timeout: 300
-      runas: root
-    - location: scripts/run_nginx.sh
-      timeout: 300
-      runas: root
-  ApplicationStop:
-    - location: scripts/stop_nginx.sh
-      timeout: 300
-      runas: root
->>>>>>> c1ca094ad56ac8c70129680571b0714ee7f3ee3c
