@@ -1,6 +1,9 @@
 #!/bin/sh 
-curl -fsSL https://get.docker.com -o get-docker.sh
-sh get-docker.sh
-systemctl start docker 
-systemctl enable docker
+sudo yum update -y 
+sudo yum install docker -y
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo usermod -a -G docker $(whoami) 
+
+
 
