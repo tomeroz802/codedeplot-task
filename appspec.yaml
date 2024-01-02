@@ -3,10 +3,11 @@ os: linux
 hooks:
   BeforeInstall:
     - location: scripts/install-dependencies.sh
-      timeout: 300
+      timeout: 60
       runas: root
+  MiddleInstall:    
     - location: scripts/run_nginx.sh
-      timeout: 300
+      timeout: 60
       runas: root
   ApplicationStop:
     - location: scripts/stop_nginx.sh
