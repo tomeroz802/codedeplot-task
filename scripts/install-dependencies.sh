@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo curl -fsSL get.docker.com -o get-docker.sh | sh 
+sudo yum install docker -y
 sudo systemctl start docker  
 sudo systemctl enable docker  
 
