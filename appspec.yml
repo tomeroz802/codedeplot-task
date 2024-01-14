@@ -8,7 +8,7 @@ hooks:
     - location: scripts/install-dependencies.sh
       timeout: 60
       runas: root
-  MiddleInstall:    
+  ApplicationStart:    
     - location: scripts/run_nginx.sh
       timeout: 60
       runas: root
